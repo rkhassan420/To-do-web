@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.light-theme{    
+     --body-light-background: rgb(231 229 228 / var(--tw-bg-opacity, 1));
+     --main-container-bg-color: white;
+     --list-text-color:black;
+
+}
+
+.dark-theme{
+    --body-light-background:rgb(28 25 23 / var(--tw-bg-opacity, 1));
+    --main-container-bg-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+    --date-color:white;
+    --title-color:white;
+    --list-text-color:white;
+    --dark-icon-color:yellow
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: var(--body-light-background);
+}
+
+
+
+.main-container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+@media (max-width:480px){
+
+    .main-container{
+        width: 80%;
+        height: 180px;
+    }
+
+    .title-img{
+        height: 23px;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+
+    input[type="text"] {
+       height: 45px;
+       padding-left: 20px;         
+    }
+
+   .task-btn{
+       
+       margin-left: 20px;
+       font-size: 13px;
+       width: 5rem;
+       
+    }
+
+    .del-all-btn{
+        font-size: 13px;
+        height: 45px;
+        width: 90px;
+
+    }
+
+    .task-text{
+        font-size: 15px;
+    }  
+
+
+}
+
+@media (max-width:430px){    
+
+    .title-img{
+        height: 20px;
+    }
+
+    .title{
+        font-size: 22px;
+    }
+
+    .task-input-container{
+        height: 50px;
+    }    
+
+   .task-btn{
+       
+       margin-left: 0px;
+       font-size: 12px;       
+       height: 50px;
+       
+    }
+
+    .del-all-btn{
+        font-size: 12px;      
+
+    }
+
+    .task-text{
+        font-size: 13px;
+    } 
+
+    
+
+}
+
+
+@media (max-width:400px){
+
+    .main-container{
+        width: 85%;
+        
+    }   
+
+}   
+
+
+@media (max-width:375px){
+
+  
+    .task-btn{
+        padding: 5px ; 
+        margin-left: -15px;
+        font-size: 12px;
+        width: 7rem; 
+                 
+    }   
+
+}
+
+@media (max-width:357px){
+
+    .main-container{
+        
+        height: 170px;
+        margin-left: -5px;
+    }
+
+
+
+    
+
+}
+
+
+@media (max-width:350px){
+
+      .main-container{
+            width: 82%; 
+            min-height: 520px;
+            margin-left: -4px; 
+      }  
+       
+  
+      .title{
+          font-size: 20px;
+      }  
+  
+      .task-input-container{
+          height: 45px;
+      }
+  
+      input[type="text"] {
+         height: 40px;         
+         font-size: 14px;       
+      }
+  
+      .task-btn{          
+         font-size: 10px;          
+         height: 40px;        
+  
+         
+      } 
+  
+      .del-all-btn{
+          font-size: 10px;
+           height: 40px;
+          width: 80px;
+  
+      } 
+     
+  
+  }
+
+
+  @media (max-width:327px){
+
+    .main-container{          
+          min-height: 460px;
+          margin-left: -15px; 
+    }  
+
+    .task-btn{       
+        width: 8rem;       
+    } 
+
+    .dust-bin{
+        width: 15px;
+    }
+
+    .del-all-btn{
+        font-size: 8px;         
+        width: 60px;
+
+    }
+
+     .task-text{
+        font-size: 12px;
+    }   
+
+}

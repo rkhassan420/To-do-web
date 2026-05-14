@@ -11,33 +11,6 @@
     }
 
 
-.light-theme{    
-     --body-light-background: rgb(231 229 228 / var(--tw-bg-opacity, 1));
-     --main-container-bg-color: white;
-     --list-text-color:black;
-
-}
-
-.dark-theme{
-    --body-light-background:rgb(28 25 23 / var(--tw-bg-opacity, 1));
-    --main-container-bg-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
-    --date-color:white;
-    --title-color:white;
-    --list-text-color:white;
-    --dark-icon-color:yellow
-}
-
-
-
-
-
-
-
-
-
-
-
-
 body{
     background-color: var(--body-light-background);
 }
